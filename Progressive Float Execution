@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner obj = new Scanner(System.in);
+      float b = obj.nextFloat();
+      System.out.printf("%.5f\n",b);
+      System.out.printf("%.4f\n",b);
+      System.out.printf("%.3f\n",b);
+      System.out.printf("%.2f\n",b);
+      System.out.printf("%.1f\n",b);
+      System.out.printf("%.0f\n",b); 
+  }
+}
