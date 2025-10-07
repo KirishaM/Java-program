@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double bill = 0;
+        if(a<=50) {
+            bill=a*1;
+        }else if(a<=150) {
+            bill=50*1+(a-50)*2;
+        }else if(a<=250) {
+            bill=50*1+100*2+(a-150)*3;
+        }else{
+            bill=50*1+100*2+100*3+(a-250)*4;
+        }
+        if(bill>150) {
+            bill += 0.2*bill;
+        }
+        System.out.println((int)bill);
+    }
+}
