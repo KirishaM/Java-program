@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int num = sc.nextInt();
+      if(num>=0 && num<=72){
+        num = num%8;
+      }
+      switch(num){
+        case 1:
+          System.out.println("LB");
+          break;
+        case 2:
+          System.out.println("MB");
+          break;
+        case 3:
+          System.out.println("UB");
+          break;
+        case 4:
+          System.out.println("LB");
+          break;
+        case 5:
+          System.out.println("MB");
+          break;
+        case 6:
+          System.out.println("UB");
+          break;
+        case 7:
+          System.out.println("SL");
+          break;
+        case 0:
+          System.out.println("SU");
+          break;
+      }
+  }
+}
